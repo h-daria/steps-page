@@ -1,0 +1,23 @@
+.page-layout {
+    display: flex;
+    justify-content: center;
+    background-color: #23103d;
+    height: 100%;
+}
+
+.stepper-container {
+    top: 30%;
+    position: relative;
+    width: 70%;
+    height: 40%;
+    background-color: #0C0C0C;
+    border: 1px solid #0C0C0C;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    padding: 3.75rem 1.75rem 4rem 3.75rem;
+}
+
+app-stepper {
+    width: 100%;
+}
