@@ -2,6 +2,10 @@
   <img src="./../../../assets/icons/4-grid.1.png" alt="grid-icon">
   Progress Steps
 </p>
-<div class="container">
-  <app-steps></app-steps>
+<div class="steps-list-container">
+  <div class="stepper" *ngFor="let stepper of steppersList">
+    <ng-container *ngFor="let steps of stepper">
+      <app-steps [steps]="steps"></app-steps>
+    </ng-container>
+  </div>
 </div>
