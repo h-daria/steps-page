@@ -1,4 +1,4 @@
-import { StepInfo } from "./steps/step-item/step-item.component";
+import { StepInfo } from "../app/page-layout/stepper/steps/step-item/step-item.component";
 
 export const stepper1: StepInfo[][] = [
     [

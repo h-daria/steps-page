@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { stepper1, stepper2 } from './data';
+import { stepper1, stepper2 } from '../../../assets/data';
 
 @Component({
   selector: 'app-stepper',
