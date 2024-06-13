@@ -4,20 +4,8 @@ import { PageLayoutComponent } from './page-layout.component';
 
 const routes: Routes = [
     {
-        path: 'stepper',
+        path: '',
         component: PageLayoutComponent,
-        // children: [
-        //   {
-        //     path: 'stepper',
-        //     loadChildren: () => import('./../page-layout/stepper/stepper.module')
-        //     .then((m) => m.StepperModule)
-        //   },
-        //   {
-        //     path: '',
-        //     redirectTo: 'stepper',
-        //     pathMatch: 'full'
-        //   },
-        // ]
     },
 ];
 
