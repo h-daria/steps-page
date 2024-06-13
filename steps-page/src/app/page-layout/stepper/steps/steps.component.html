@@ -1,3 +1,5 @@
 <div class="container">
-  <app-step-item></app-step-item>
+  <ng-container *ngFor="let step of steps; let i = index">
+    <app-step-item [step]="step" (click)="onChangeStep(i)"></app-step-item>
+  </ng-container>
 </div>

@@ -1,3 +1,28 @@
-<p>
-  step-item works!
-</p>
+<p class="step-label" [ngClass]="{'active': step.isActive}">{{ step.label }}</p>
+<div class="step-container">
+  <div class="line"
+    *ngIf="step.isFinished || step.isActive"
+    [ngClass]="{'finished-step-line': step.isFinished}"
+  ></div>
+
+  <div class="untouched-step-line" *ngIf="!step.isFinished && !step.isActive"></div>
+
+  <div class="circle"
+    *ngIf="!step.isFinished; else finishedStep"
+    [ngClass]="[step.isActive ? 'active-step' : 'circle']"
+    >{{ step.count }}
+  </div>
+
+  <ng-template #finishedStep>
+    <div class="circle finished-step">
+      <img src="./../../../../../assets/icons/check-icon.png" alt="check-icon">
+    </div>
+  </ng-template>
+
+  <div class="line"
+    *ngIf="step.isFinished || step.isActive"
+    [ngClass]="{'finished-step-line': step.isFinished}"
+  ></div>
+
+  <div class="untouched-step-line" *ngIf="!step.isFinished && !step.isActive"></div>
+</div>
